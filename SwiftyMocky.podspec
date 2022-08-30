@@ -29,7 +29,8 @@ Library that uses metaprogramming technique to generate mocks based on sources, 
       'OTHER_LDFLAGS' => '$(inherited) -weak-lXCTestSwiftSupport -Xlinker -no_application_extension',
       'OTHER_SWIFT_FLAGS' => '$(inherited) -suppress-warnings',
       'FRAMEWORK_SEARCH_PATHS' => '$(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"',
-      'DEFINES_MODULE' => 'YES'
+      'DEFINES_MODULE' => 'YES',
+      'ENABLE_TESTING_SEARCH_PATHS' => "YES"
   }
   s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
 end
